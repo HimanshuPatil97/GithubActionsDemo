@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My S3 Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: white;
+            color: #333;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        🚀 My First Auto-Deployed Website
+    </header>
+
+    <div class="container">
+        <h1>Hello, World! 👋</h1>
+        <p>This website is automatically deployed to AWS S3 using GitHub Actions.</p>
+
+        <button onclick="showMessage()">Click Me</button>
+    </div>
+
+    <footer>
+        © 2026 | Built by Himanshu
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Deployment Successful! 🎉");
+        }
+    </script>
+
+</body>
+</html>
