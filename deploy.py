@@ -1,4 +1,7 @@
 import boto3
+import os
+
+bucket_name = os.environ.get("S3_BUCKET")
 
 s3 = boto3.client('s3')
 
